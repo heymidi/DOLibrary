@@ -1,0 +1,147 @@
+/**
+ * Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/)
+ * http://cssreset.com
+ */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* End Reset */
+
+.big-wrapper {
+	width: 100%;
+	background-image: url(images/debut_light.png);
+}
+.wrapper {
+	width: 85%;
+	max-width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #fff;
+}
+
+.right-column {
+	max-width: 65%;
+	float: right;
+	padding-left: 50px;
+	padding-right: 50px;
+}
+
+.left-column {
+	max-width: 20%;
+	min-width: 200px;
+	float: left;
+	padding-left: 50px;
+	margin-top: 40px;
+	margin-bottom: 40px;
+
+}
+
+.subject {
+	border-bottom: dotted;
+	border-bottom-color: #00aaab;
+
+	padding-bottom: 25px;
+	max-width: 600px;
+	min-width: 150px;
+}
+
+.head {
+	height: 193px;
+	/* width: 100%; */
+	background-image: url(images/header.svg);
+}
+
+.title {
+	color: #00aaab;
+}
+
+.clear {
+	clear: both;
+}
+
+.field {
+	background-color: #F3F0F0;
+	border: none;
+	margin-bottom: 10px;
+	width: 100%;
+	min-width: 120px;
+}
+
+.list {
+	margin-top: 30px;
+	padding-bottom: 30px;
+}
+
+.left-column h2 {
+	color: #000000;
+	font-size: 18px;
+	line-height: 40px;
+}
+
+button {
+	margin-top: 30px;
+}
+
+p, h1, h2, li, input, form {
+	font-family: 'calibri','Droid Sans', sans-serif;
+	font-weight: 300;
+}
+
+h1 {
+	font-size: 25px;
+	line-height: 50px;
+	color: #545454;
+}
+
+p {
+	line-height: 20px;
+}
+
+li, input {
+	line-height: 25px;
+}
+
+input {
+	font-size: 13px;
+}

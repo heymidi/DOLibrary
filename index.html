@@ -1,0 +1,217 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<link rel="stylesheet" href="styles.css" />
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script type="text/javascript" src="scripts.js"></script>
+	<title>Test Library</title>
+</head>
+<body>
+
+<div class="big-wrapper">
+	<div class="wrapper">
+		<div class="head"></div>
+		<div class="left-column">
+			<form data-bind="submit:addItem" onsubmit="return false">
+			    Author First Name: <input type="text" class="field" id="firstname" /><br>
+			    Author Last Name: <input type="text" class="field" id="lastname" /><br>
+			    Book Title: <input type="text" class="field" id="title" /><br>
+
+			    <h1>Subject</h1>
+				<input type="radio" name="subject" id="sharepoint2013" value="Sharepoint2013" onclick="subSP13()" /> SharePoint 2013  <br>
+				<input type="radio" name="subject" id="sharepoint2010" value="Sharepoint2010" onclick="subSP10()" /> SharePoint 2010 <br>
+				<input type="radio" name="subject" id="sharepoint2007" value="Sharepoint2007" onclick="subSP07()" /> SharePoint 2007 <br>
+				<input type="radio" name="subject" id="apple" value="Apple" onclick="subApple()" /> Apple <br>
+				<input type="radio" name="subject" id="javascript" value="JavaScript" onclick="subJS()" /> JavaScript <br>
+				<input type="radio" name="subject" id="html5" value="HTML5" onclick="subHTML5()" /> HTML5 <br>
+				<input type="radio" name="subject" id="c" value="C" onclick="subC()" /> C#<br>
+				<input type="radio" name="subject" id="asp" value="ASP" onclick="subASP()" /> ASP.Net<br>
+				<input type="radio" name="subject" id="adobe" value="Adobe" onclick="subAdobe()" /> Adobe<br>
+				<input type="radio" name="subject" id="ruby" value="Ruby" onclick="subRuby()" /> Ruby<br>
+				<input type="radio" name="subject" id="couch" value="Couch" onclick="subCouch()" /> Couch<br>
+
+				<input type="radio" name="subject" id="cplus" value="CPlus" onclick="subCPlus()" /> C++<br>
+
+				<input type="radio" name="subject" id="windows" value="Windows" onclick="subWindows()" /> Windows<br>
+				<input type="radio" name="subject" id="tcp" value="TCP" onclick="subTCP()" /> TCP/IP<br>
+				<input type="radio" name="subject" id="misc" value="Misc" onclick="subMisc()" /> Miscellaneous<br>
+
+			    <button type="button" onclick="findSelectedValue(), this.form.reset()" value="Add Book">Add Book</button>
+			</form>
+		</div>
+
+		<div class="right-column">
+			<h1 class="title">Dynamic Owl Library</h1>
+			<p>Welcome to the Dynamic Owl library. This Library was created to help us keep track of the books and resourses
+			that are avalible to us here at Dynamic Owl. This application is not intended to be used as a manditory 
+			sign in/ sign out method but rather as a community page for  shareing resources. Please take the time to up
+			date new additions to the library as you see fit. To request a new subject be added contact me at 
+			regan@dynamicowl.com</p>
+
+			<div class="list">
+
+				<h1 class="title">Dynamic Owl Library</h1>
+			
+				<div id="SP13">
+					<h1>SharePoint 2013</h1>
+					<ul class="subject">
+						<li>SharePoint 2013 Development - Wrox</li>
+						<li>Microsoft SharePoint 2013 Developer Reference - Microsoft</li>
+						<li>Inside Microsoft Share Point 2013 - Microsoft</li>
+						<li>Inside Microsoft SharePoint 2013 - Microsoft</li>
+						<li>Professional SharePoint Server 2013 Administration - Critical Path Training</li>
+						<li>SharePoint 2013 administration - Wrox</li>
+						<li>Developing SharePoint Applications Using Windows Azure - Microsoft</li>
+						<li>SharePoint 2013 Development - Wrox</li>
+						<li>SharePoint 2013 Building Business Solutions - Wrox</li>
+						<li>Microsoft SharePoint 2013 Developer Refeance - Microsoft</li>
+					</ul>
+				</div>
+
+				<div id="SP10">
+					<h1>SharePoint 2010</h1>
+					<ul class="subject">
+						<li>SharePoint 2010 Administration - Wrox </li>
+						<li>SharePoint 2010 Enterprise Architects Guidebook - Wrox</li>
+						<li>SharePoint 2010 Business Solutions with SharePoint - Wrox</li>
+						<li>Essential SharePoint 2010 - Addison Wesley</li>
+						<li>Developers guild to Windows SharePoint Services 3.0 - Thomson</li>
+						<li>Real World SharePoint 2010 - Wrox</li>
+						<li>SharePoint 2010 Administrators Pocket Consultant - Microsoft</li>
+						<li>SharePoint 2010 Branding and User Interface Design - Wrox </li>
+						<li>SharePoint 2010 Development - Wrox</li>
+						<li>Practical SharePoint 2010 Information Architecture - Apress</li>
+						<li>Developing SharePoint Applications Using Windows Azure - Microsoft</li>
+					</ul>
+				</div>
+
+				<div id="SP07">
+					<h1>SharePoint 2007</h1>
+					<ul class="subject">
+						<li>Building Web Applications with SharePoint Designer 2007 - Microsoft</li>
+						<li>Office SharePoint Designer 2007 - Microsoft</li>
+						<li>SharePoint designer 2007 - Wrox</li>
+						<li>SharePoint Designer 2007 Bible - Kartik / Wiley</li>
+						<li>SharePoint Designer 2007 - Wrox</li>
+						<li>SharePoint 2007 Administration - Course Tecnology</li>
+					</ul>
+				</div>
+
+				<div id="Apple">
+					<h1>IPhone and IOS</h1>
+					<ul class="subject">
+						<li>Beginning iPhone Games Development - Apress </li>
+						<li>More iPhone 3 Development - Apress</li>
+						<li>Beginning iOS 5 Development - Apress</li>
+						<li>iPhone Games Projects - Apressv </li>
+						<li>Beginning iPhone 4 Development - Apress</li>
+						<li>Programming the Mobile Web - O'Reilly</li>
+						<li>Mobile Design and Development - O'Reilly</li>
+						<li>The iPhone Developer's Cookbook - Sadun</li>
+						<li>Beginning Smartphone Web Development - Apress</li> 
+						<li>Beginning iPhone Development - Apress</li>
+						<li>Learning iOS Game Programming - Addison Wesley</li>
+						<li>Learn iPhone and iPad cocos2d Game Dev - Apress</li>
+						<li>The iPhone Developer's Cookbook -Addison Wesley </li>
+						<li>Core Animation for Mac OS X and the iPhone - Dudney </li>
+						<li>iPhone Programming the Big Nerd Ranch Guide - big nerd ranch </li>
+						<li>IPhone User Interface Design Projects - Apress </li>
+						<li>Beginning iPhone 3 Development  - Apress</li>
+						<li>iOS 4 Programming Cookbook - O'Reilly</li>
+					</ul>
+				</div>
+
+				<div id="JS">
+					<h1>JavaScript</h1>
+					<ul class="subject">
+						<li>JavaScript The Definitive Guide - O'Reilly</li>
+						<li>Data Structures and Algorithms in Java - SAMs</li>
+						<li>Angular JS - o'Reilley</li>
+						<li>JavaScript for Web developers - Wrox</li>
+						<li>JavaScript Patterns - O'Reilley </li>
+						<li>Effective JavaScript - Herman</li>
+						<li>Secrets of the JavaScript Ninja - Manning</li>
+						<li>Ext JS in Action - Manning</li>
+					</ul>
+				</div>
+
+				<div id="HTML5">
+					<h1>HTML5</h1>
+					<ul class="subject">
+						<li>Pro HTML 5 - Apress</li>
+						<li>The Definitive Guide to HTML5 - Apress</li>
+					</ul>
+				</div>
+
+				<div id="C">
+					<h1>C#</h1>
+					<ul class="subject">
+					<li></li>
+					</ul>
+				</div>
+				
+				<div id="ASP">
+					<h1>ASP.Net</h1>
+					<ul class="subject">
+					<li></li>
+					</ul>
+				</div>
+				
+				<div id="Adobe">
+					<h1>Adobe</h1>
+					<ul class="subject">
+					<li></li>
+					</ul>
+				</div>
+
+				<div id="Ruby">
+					<h1>Ruby</h1>
+					<ul class="subject">
+					<li></li>
+					</ul>
+				</div>
+						
+				<div id="Couch">
+					<h1>Couch</h1>
+					<ul class="subject">
+					<li></li>
+					</ul>
+				</div>
+				
+				<div id="CPlus">
+					<h1>C++</h1>
+					<ul class="subject">
+					</ul>
+				</div>
+						
+				<div id="Windows">
+					<h1>Windows</h1>
+					<ul class="subject">
+					<li></li>
+					</ul>
+				</div>
+						
+				<div id="TCP">
+					<h1>TCP/IP</h1>
+					<ul class="subject">
+					<li></li>
+					</ul>
+				</div>
+
+				<div id="Misc">
+					<h1>Miscellaneous</h1>
+					<ul class="subject">
+					<li></li>
+					</ul>
+				</div>
+						
+			</div>
+		</div>
+			
+	    <div class="clear"></div> 
+	</div>
+</div>	
+
+</body>
+</html>
